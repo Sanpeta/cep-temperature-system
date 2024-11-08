@@ -11,7 +11,7 @@ import (
 )
 
 func HandlerWeather(w http.ResponseWriter, r *http.Request) {
-	config, err := config.LoadConfig(".")
+	config, err := config.LoadConfig("../../")
 	if err != nil {
 		log.Fatal("cannot load config:", err)
 	}
